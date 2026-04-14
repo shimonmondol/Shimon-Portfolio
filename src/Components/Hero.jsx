@@ -98,7 +98,7 @@ const Hero = () => {
               className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 text-gray-300 hover:border-teal-400 hover:text-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
   hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition"
             >
-              <Download size={18} /> Download CV
+              <Download size={18} /> Download Resume
             </motion.a>
           </motion.div>
         </motion.div>

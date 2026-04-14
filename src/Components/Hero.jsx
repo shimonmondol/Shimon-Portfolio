@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import img from "../assets/Image.png";
+import resume from "../assets/Shimon Kumar Mondol.pdf";
 import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -93,7 +95,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.95 }}
-              href="/src/assets/Shimon Kumar Mondol.pdf"
+              href={resume}
               download
               className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 text-gray-300 hover:border-teal-400 hover:text-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
   hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition"

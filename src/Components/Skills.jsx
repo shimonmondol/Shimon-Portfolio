@@ -105,7 +105,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-28 bg-[#0b0f14] text-white">
+    <section id="skills" className="py-16 bg-[#0b0f14] text-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <div className="text-center mb-16">

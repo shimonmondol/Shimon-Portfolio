@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#0b0f14] py-24">
+    <section id="about" className="bg-[#0b0f14] py-16">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT TEXT */}

@@ -34,9 +34,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-[#0b0f14] py-20 sm:py-24">
+    <section id="contact" className="bg-[#0b0f14] py-16">
       <ToastContainer position="top-right" autoClose={3000} />
-
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* LEFT INFO */}
         <motion.div

@@ -9,7 +9,7 @@ const services = [
     icon: <Code2 size={26} />,
     terminal: true,
     description: [
-"React applications",
+      "React & Nextjs applications",
       "Tailwind CSS UI design",
       "Reusable components",
       "Performance optimization",
@@ -58,9 +58,8 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="bg-[#0b0f14] py-32 text-gray-300">
+    <section id="services" className="bg-[#0b0f14] py-16 text-gray-300">
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,4 +1,3 @@
-
 import About from "./Components/About"
 import Contact from "./Components/Contact"
 import FloatingActions from "./Components/FloatingAction"

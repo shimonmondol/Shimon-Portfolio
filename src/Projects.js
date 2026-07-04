@@ -4,7 +4,7 @@ const projects = [
     title: "Baraz Ecommerce",
     description:
       "Baraz Ecommerce is a modern online shopping platform built to deliver a seamless and user-friendly shopping experience. It offers features like product management, secure payments for business growth.",
-    image: "https://i.ibb.co.com/gq95gGz/Ecommerce.png",
+    image: "https://i.ibb.co.com/yBgkfXV7/Ecommerce.png",
     live: "https://wondrous-biscuit-27b2a1.netlify.app/",
     github: "https://github.com/shimonmondol/Full-Stack-Ecommerce",
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "IT Traning Center",
     description:
       "An IT Training Center provides professional courses in programming, web development, networking, and software tools to build industry-ready skills.It helps students and professionals gain practical knowledge.",
-    image: "https://i.ibb.co.com/6Qz580p/Training.png",
+    image: "https://i.ibb.co.com/F4Sk0JCv/Training.png",
     live: "https://unrivaled-kringle-2fe432.netlify.app/",
     github: "https://github.com/shimonmondol/IT-Training-Center",
   },

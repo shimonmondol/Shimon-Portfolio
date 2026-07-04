@@ -1,13 +1,14 @@
 const techs = [
   "React",
+  "Nextjs",
   "JavaScript",
   "Tailwind CSS",
-  "HTML",
-  "CSS",
-  "GitHub",
-  "Netlify",
-  "Figma",
-  "VS Code",
+  "Firebase",
+  "Nodejs",
+  "Express",
+  "MongoDB",
+  "SQL",
+  "Prisma ORM"
 ];
 
 const TechStack = () => {

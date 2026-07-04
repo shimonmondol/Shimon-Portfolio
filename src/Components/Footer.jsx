@@ -40,8 +40,8 @@ const Footer = () => {
          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(34,211,238,0.12),transparent_60%)] pointer-events-none" />
 
        {/* Glow Line at Top */}
-       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-[1px] bg-gradient-to-r from-transparent via-teal-400 to-transparent opacity-60" />
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-px bg-linear-to-r from-transparent via-teal-400 to-transparent opacity-60" />
+      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-around gap-140">
 
         {/* Left - Year */}
         <p className="text-gray-500 text-sm tracking-wide">

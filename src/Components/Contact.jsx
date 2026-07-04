@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
@@ -14,10 +14,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ifphmx8",
-        "template_d7vkr73",
+        "service_5m4zqxq",     
+        "template_f1n519l",    
         formRef.current,
-        "ZJq8L_juvsFhOecf-",
+        "wHc8cHAlK2OsjZUnU"
       )
       .then(
         () => {
@@ -29,7 +29,7 @@ const Contact = () => {
           setLoading(false);
           toast.error("Something went wrong ❌", { theme: "dark" });
           console.log(error);
-        },
+        }
       );
   };
 
@@ -37,7 +37,6 @@ const Contact = () => {
     <section id="contact" className="bg-[#0b0f14] py-16">
       <ToastContainer position="top-right" autoClose={3000} />
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        {/* LEFT INFO */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +55,7 @@ const Contact = () => {
             Have an idea? Let’s build something amazing together
           </p>
 
-          {/* Contact Info */}
+          {/* Contact Info Items */}
           <div className="mt-8 space-y-4">
             {/* Email */}
             <a
@@ -68,19 +67,21 @@ const Contact = () => {
                   <Mail size={20} />
                 </span>
                 <div>
-                  <h3>Email</h3>
-                  <p>shimonuap072@gmail.com</p>
+                  <h3 className="text-sm font-semibold">Email</h3>
+                  <p className="text-xs sm:text-sm">shimonuap072@gmail.com</p>
                 </div>
               </div>
             </a>
 
             {/* WhatsApp */}
-            <div className="w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 hover:border-teal-400 shadow-teal-400/10 hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]">
+            <div className="w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 hover:border-teal-400">
               <a
                 href="https://wa.me/8801738007334"
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-3 text-gray-300 hover:text-teal-400 transition"
               >
-                <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-teal-400 backdrop-blur-lg shadow-lg">
+                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-teal-400">
                   <Phone size={20} />
                 </span>
                 <div>
@@ -91,9 +92,9 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 hover:border-teal-400 shadow-teal-400/10 hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]">
+            <div className="w-full px-4 py-3 rounded-2xl bg-black/30 border border-white/10 hover:border-teal-400">
               <div className="flex items-center gap-3 text-gray-300">
-                <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-teal-400 backdrop-blur-lg shadow-lg">
+                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-teal-400">
                   <MapPin size={20} />
                 </span>
                 <div>
@@ -104,8 +105,6 @@ const Contact = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* RIGHT FORM */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +118,7 @@ const Contact = () => {
               <label className="block text-sm text-gray-400 mb-1">Name</label>
               <input
                 type="text"
-                name="name"
+                name="user_name"
                 required
                 placeholder="Your Name"
                 className="w-full px-4 py-3 sm:py-4 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400"
@@ -127,12 +126,10 @@ const Contact = () => {
             </div>
             {/* Email */}
             <div>
-              <label className="block text-sm text-gray-400 mb-1">
-                Email Address
-              </label>
+              <label className="block text-sm text-gray-400 mb-1">Email Address</label>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 required
                 placeholder="email@gmail.com"
                 className="w-full px-4 py-3 sm:py-4 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400"
@@ -141,9 +138,7 @@ const Contact = () => {
 
             {/* Message */}
             <div>
-              <label className="block text-sm text-gray-400 mb-1">
-                Message
-              </label>
+              <label className="block text-sm text-gray-400 mb-1">Message</label>
               <textarea
                 rows="4"
                 name="message"
@@ -157,8 +152,8 @@ const Contact = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 sm:py-4 rounded-lg bg-teal-400 transition text-white cursor-pointer font-medium shadow-teal-400/10 hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]
-                ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-teal-400"}
+              className={`w-full py-3 sm:py-4 rounded-lg bg-black/30 text-white font-medium transition duration-300
+                ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-teal-800 cursor-pointer"}
               `}
             >
               {loading ? "Sending..." : "Send Message"}

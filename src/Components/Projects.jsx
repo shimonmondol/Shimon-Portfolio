@@ -10,7 +10,7 @@ const Projects = () => {
         </p>
         <h2 className="text-3xl uppercase md:text-5xl font-bold text-white leading-tight">
           My
-          <span className="text-teal-400 ml-2">Works</span>
+          <span className="text-teal-400 ml-2">Projects</span>
         </h2>
         <div className="grid gap-8 mt-8">
           {projects.map((project, index) => (

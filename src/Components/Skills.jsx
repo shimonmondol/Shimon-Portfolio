@@ -64,6 +64,11 @@ const skillCategories = [
         percent: 80,
         icon: "https://i.ibb.co.com/kgFJ3jqL/postman-icon.webp",
       },
+      {
+        name: "Prisma ORM",
+        percent: 70,
+        icon: "https://i.ibb.co.com/tkbbyM6/Prisma-ORM.png",
+      },
     ],
   },
   {

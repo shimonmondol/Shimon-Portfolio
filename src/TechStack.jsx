@@ -17,8 +17,8 @@ const TechStack = () => {
       <div className="relative">
         
         {/* Gradient fade edges */}
-        <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-[#0b0f14] to-transparent z-10" />
-        <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-[#0b0f14] to-transparent z-10" />
+        <div className="absolute left-0 top-0 w-32 h-full bg-linear-to-r from-[#0b0f14] to-transparent z-10" />
+        <div className="absolute right-0 top-0 w-32 h-full bg-linear-to-l from-[#0b0f14] to-transparent z-10" />
 
         {/* Marquee */}
         <div className="flex gap-10 animate-marquee whitespace-nowrap">

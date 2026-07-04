@@ -1,5 +1,6 @@
 import About from "./Components/About"
 import Contact from "./Components/Contact"
+import Experience from "./Components/Experience"
 import FloatingActions from "./Components/FloatingAction"
 import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
@@ -24,6 +25,7 @@ function App() {
      <Hero></Hero>
      <TechStack></TechStack>
        <About></About>
+       <Experience></Experience>
      <Skills></Skills>
      <Services></Services>
      <Projects></Projects>

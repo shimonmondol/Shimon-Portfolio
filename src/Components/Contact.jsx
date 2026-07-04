@@ -48,7 +48,7 @@ const Contact = () => {
           </p>
 
           <h2 className="text-3xl md:text-5xl uppercase font-bold text-white leading-tight">
-            Reach Out <span className="text-teal-400 ml-2">Me</span>
+            Contact <span className="text-teal-400 ml-2">Me</span>
           </h2>
 
           <p className="text-gray-400 mt-6 max-w-md text-sm sm:text-base">

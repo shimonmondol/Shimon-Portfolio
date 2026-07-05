@@ -16,7 +16,6 @@ const ProjectCard = ({ project, index }) => {
           isEven ? "lg:flex-row-reverse" : ""
         }`}
       >
-        {/* 📸 ইমেজ সেকশন: থ্রিডি গ্লাস ইফেক্ট ও স্মুথ স্কেলিং */}
         <motion.div
           whileHover={{ scale: 1.04, rotate: isEven ? -1 : 1 }}
           transition={{ type: "spring", stiffness: 250, damping: 15 }}
@@ -28,7 +27,6 @@ const ProjectCard = ({ project, index }) => {
               alt={project.title}
               className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
             />
-            {/* ছবির ওপর প্রিমিয়াম ওভারলে গ্রেডিয়েন্ট */}
             <div className="absolute inset-0 bg-black/30 via-transparent to-transparent opacity-60 pointer-events-none" />
           </div>
         </motion.div>
@@ -39,17 +37,24 @@ const ProjectCard = ({ project, index }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="text-xs font-bold tracking-widest text-neutral-tertiary-medium uppercase mb-2 block">
-              // Project 0{index + 1}
-            </span>
-
-            <h3 className="text-3xl lg:text-4xl font-extrabold text-heading tracking-tight mb-4 hover:text-neutral-tertiary-medium transition-colors duration-300 cursor-pointer">
+            <h3 className="text-3xl lg:text-4xl font-semibold text-heading tracking-tight mb-4 hover:text-neutral-tertiary-medium transition-colors duration-300 cursor-pointer">
               {project.title}
             </h3>
 
-            <p className="text-body text-base lg:text-lg leading-relaxed mb-8 max-w-xl opacity-90">
-              {project.description}
-            </p>
+            {/* Render as bullet points if description is an array, otherwise render as text */}
+            {Array.isArray(project.description) ? (
+              <ul className="list-disc list-outside pl-5 text-body text-base lg:text-lg leading-relaxed mb-8 max-w-xl opacity-90 space-y-2">
+                {project.description.map((point, idx) => (
+                  <li key={idx} className="marker:text-teal-400">
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-body text-base lg:text-lg leading-relaxed mb-8 max-w-xl opacity-90">
+                {project.description}
+              </p>
+            )}
 
             <div className="flex flex-wrap gap-4">
               <motion.a

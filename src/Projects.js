@@ -2,8 +2,12 @@ const projects = [
   {
     id: 1,
     title: "Baraz Ecommerce",
-    description:
-      "Baraz Ecommerce is a modern online shopping platform built to deliver a seamless and user-friendly shopping experience. It offers features like product management, secure payments for business growth.",
+    description: [
+      "Easily explore available items on the main shop page.",
+      "Any item to open its dedicated page, see all descriptions.",
+      "Add to cart button to complete your purchase and integrated payment system.",
+      "After payment, you will be automatically redirected to a dedicated order details page.",
+    ],
     image: "https://i.ibb.co.com/yBgkfXV7/Ecommerce.png",
     live: "https://wondrous-biscuit-27b2a1.netlify.app/",
     github: "https://github.com/shimonmondol/Full-Stack-Ecommerce",
@@ -11,20 +15,30 @@ const projects = [
   {
     id: 2,
     title: "Hero Io",
-    description:
-      "Discover millions of apps, games, books, and more on Hero Io with a secure and seamless apps install experience. Explore top-rated content, personalized recommendations, and regular updates all in one place.",
+    description: [
+      "View and browse all available applications in one place.",
+      "Search for your favorite apps instantly.",
+      "Any application to view its details and installation options.",
+      "Install Now the app and view your updated installation status.",
+      "Easily uninstall any application directly from the installation page.",
+    ],
     image: "https://i.ibb.co.com/rGM2vmYH/Hero.png",
     live: "https://heartfelt-pothos-ff178e.netlify.app/",
     github: "https://github.com/shimonmondol/Hero-Io",
   },
   {
     id: 3,
-    title: "IT Traning Center",
-    description:
-      "An IT Training Center provides professional courses in programming, web development, networking, and software tools to build industry-ready skills.It helps students and professionals gain practical knowledge.",
-    image: "https://i.ibb.co.com/F4Sk0JCv/Training.png",
-    live: "https://unrivaled-kringle-2fe432.netlify.app/",
-    github: "https://github.com/shimonmondol/IT-Training-Center",
+    title: "CS — Ticket System",
+    description: [
+      "Customer ticket to immediately add it to task status.",
+      "Task tickets are clearly marked as In-Progress while worked on.",
+      "Completed tickets display a Resolved status.",
+      "Complete button on any task to instantly mark the issue as resolved.",
+      "Automatically clears ticket from your task status.",
+    ],
+    image: "https://i.ibb.co.com/m5P2crVc/Ticket-System.png",
+    live: "https://comforting-gnome-343039.netlify.app/",
+    github: "https://github.com/shimonmondol/Ticket-System",
   },
 ];
 

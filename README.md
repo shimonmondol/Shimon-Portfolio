@@ -3,6 +3,7 @@
 A modern, responsive portfolio built with **React + Tailwind CSS**.
 
 ## ✨ Features
+
 - Clean & premium UI
 - Smooth scrolling navigation
 - Tech stack marquee
@@ -10,12 +11,14 @@ A modern, responsive portfolio built with **React + Tailwind CSS**.
 - Mobile responsive design
 
 ## 🛠️ Tech Stack
+
 - React
 - Tailwind CSS
 - Framer Motion
 - Lucide Icons
 
 ## 📬 Contact
-- Email: yourmail@example.com
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourusername
+
+- Email: shimonuap072@gmail.com
+- GitHub: https://github.com/shimonmondol
+- Portfolio : https://shimondev.netlify.app/

@@ -10,9 +10,9 @@ const fadeUp = {
 
 // Roles for typing animation
 const roles = [
-  "Frontend Developer",
-  "MERN Stack Developer",
   "Full Stack Developer",
+  "MERN Stack Developer",
+  "Frontend Developer",
 ];
 
 const Hero = () => {
@@ -81,9 +81,10 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="text-lg text-gray-400 max-w-lg"
           >
-            I craft modern and responsive frontend web applications using React,
-            Nextjs and the MERN stack, focusing on clean code, intuitive
-            interfaces, and scalable solutions that drive real-world impact.
+            I build modern and responsive web applications using React, Next.js,
+            Node.js, Express.js, and MongoDB. I focus on writing clean code,
+            creating user-friendly interfaces, and building reliable solutions
+            that solve real-world problems.
           </motion.p>
 
           {/* Buttons */}
@@ -97,7 +98,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/1uBqNzJMPWYlULFSU6HXpTYg5t6_O9-JP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1H0viKb5wNh5tMAZ8u4XqVC5uifAN4nbB/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 text-gray-300 hover:border-teal-400 hover:text-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)] hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition"

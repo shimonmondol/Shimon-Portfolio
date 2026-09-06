@@ -9,7 +9,7 @@ const socials = [
   },
   {
     icon: <Linkedin size={30} />,
-    link: "https://www.linkedin.com/in/shimon-mondol-b92004372/",
+    link: "https://www.linkedin.com/in/shimon-mondol/",
     label: "LinkedIn",
   },
   {
